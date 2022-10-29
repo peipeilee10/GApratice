@@ -17,11 +17,14 @@
   </script>
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K3WLFNZ');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K3WLFNZ');</script>
   <!-- End Google Tag Manager -->
 </head>
 <style>
@@ -30,19 +33,40 @@
     margin: auto;
     text-align: center;
   }
+
+  .btnArea{
+    margin-bottom: 80px;
+    font-size: 24px;
+  }
+
+  .btnArea a{
+    color: black;
+  }
+
+  #btn{
+    font-size: 24px;
+  }
 </style>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3WLFNZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3WLFNZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <h1>THIS IS GA PRACTICE PAGE</h1>
-    <img src="https://picsum.photos/600/600/?random=10">
-    <img src="https://picsum.photos/600/600/?random=5">
-    <img src="https://picsum.photos/600/600/?random=1">
-    <button onclick="alert('點擊事件+1')">click me!!!</button>
+    <div class="btnArea">
+      <button id="btn" onclick="alert('點我幹嘛!')">點我看看</button>
+      <a href="https://www.youtube.com/" class="btn">click me!!!</a>
+    </div>
+
+    <img src="https://picsum.photos/1200/600/?random=10">
+    <img src="https://picsum.photos/1200/600/?random=5">
+    <img src="https://picsum.photos/1200/600/?random=1">
+
+    <hr>
+
+    <p style="font-size:30px">END</p>
 
   </div>
 </body>
