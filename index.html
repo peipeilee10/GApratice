@@ -69,6 +69,14 @@
     <p style="font-size:30px">END</p>
 
   </div>
+  <script>
+    // ga(‘send’, ‘event【事件】’, ‘標籤分類【可以使用社群媒體一個分類、訂閱電子報一個分類】’, ‘做什麼動作’, ‘在GA顯示時要顯示什麼名稱or 活動標籤’)
+    const btn = document.getElementById('#btn')
+    btn.addEventListener('click',function(e){
+      ga('send','event','點擊按鈕','點擊','按鈕')
+      console.log('click')
+    })
+  </script>
 </body>
 
 </html>
