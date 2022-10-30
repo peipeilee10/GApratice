@@ -34,16 +34,16 @@
     text-align: center;
   }
 
-  .btnArea{
+  .btnArea {
     margin-bottom: 80px;
     font-size: 24px;
   }
 
-  .btnArea a{
+  .btnArea a {
     color: black;
   }
 
-  #btn{
+  #btn {
     font-size: 24px;
   }
 </style>
@@ -57,7 +57,8 @@
     <h1>THIS IS GA PRACTICE PAGE</h1>
     <div class="btnArea">
       <button id="btn" onclick="alert('點我幹嘛!')">點我看看</button>
-      <a href="https://www.youtube.com/" onclick="ga('send','event','Link','Click','youtube certification')">click me!!!</a>
+      <a href="https://www.youtube.com/" onclick="ga('send','event','Link','Click','youtube certification')">click
+        me!!!</a>
     </div>
 
     <img src="https://picsum.photos/1200/600/?random=10">
@@ -73,10 +74,12 @@
     // ga(‘send’, ‘event【事件】’, ‘標籤分類【可以使用社群媒體一個分類、訂閱電子報一個分類】’, ‘做什麼動作’, ‘在GA顯示時要顯示什麼名稱or 活動標籤’)
     const btn = document.getElementById('btn')
 
-    btn.addEventListener('click',function(e){
-      gtag('send','event','點擊按鈕','點擊','按鈕')
+    btn.addEventListener('click', function () {
+      gtag('event', 'download_click',
+        { 'event_category': 'download', 'event_label': '按鈕點擊次數' }
+      );
       console.log('click')
-    })
+    }, false);
   </script>
 </body>
 
